@@ -1,8 +1,5 @@
 package g7.project.group7android
 
-// melakukan percobaan commmit and push
-// melakukan percobaan pull request
-// jo coba commit
 
 import android.content.Intent
 import android.os.Bundle
@@ -31,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.logout).setOnClickListener {
             firebaseAuth.signOut()
             val intent = Intent(this, SignInActivity::class.java)
-            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+//            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(intent)
             finish()
         }
