@@ -44,12 +44,110 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="192dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="52dp"
-        android:src="@drawable/rounded"
-        app:layout_constraintStart_toStartOf="@id/tvJudul"
+        android:id="@+id/ivColdplay"
+        android:layout_width="367dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/coldplay"
+        app:layout_constraintEnd_toEndOf="@id/ivLogout"
+        app:layout_constraintStart_toStartOf="@id/ivMenu"
         app:layout_constraintTop_toBottomOf="@+id/tvJudul" />
+
+    <ImageView
+        android:id="@+id/ivBlur"
+        android:layout_width="335dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="136dp"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/rounded_blur"
+        app:layout_constraintEnd_toEndOf="@id/ivColdplay"
+        app:layout_constraintStart_toStartOf="@id/ivColdplay"
+        app:layout_constraintTop_toBottomOf="@id/tvJudul"/>
+
+    <TextView
+        android:id="@+id/tvNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:fontFamily="@font/alata"
+        android:text="Coldplay : Music of the Spheres"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ivColdplay"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="@id/ivColdplay"
+        app:layout_constraintTop_toBottomOf="@id/tvJudul" />
+
+    <ImageView
+        android:id="@+id/ivLocation"
+        android:layout_width="15dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/location"
+        app:layout_constraintStart_toStartOf="@id/tvNama"
+        app:layout_constraintTop_toBottomOf="@id/tvNama" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gelora Bung Karno Stadium"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:fontFamily="@font/alata"
+        app:layout_constraintStart_toEndOf="@id/ivLocation"
+        app:layout_constraintTop_toBottomOf="@id/tvNama"
+        android:layout_marginStart="5dp"/>
+
+    <ImageView
+        android:id="@+id/ivDate"
+        android:layout_width="15dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/calendar"
+        app:layout_constraintStart_toStartOf="@id/tvNama"
+        app:layout_constraintTop_toBottomOf="@id/ivLocation" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="November 15 2023"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:fontFamily="@font/alata"
+        app:layout_constraintStart_toEndOf="@id/ivDate"
+        app:layout_constraintTop_toBottomOf="@id/tvLocation"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:id="@+id/tvStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/alata"
+        android:text="Start from"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/tvLocation"
+        app:layout_constraintTop_toBottomOf="@id/tvNama" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/alata"
+        android:text="Rp 1.100.000"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@id/tvLocation"
+        app:layout_constraintTop_toBottomOf="@id/tvStart" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
