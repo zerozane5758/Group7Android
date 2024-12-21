@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Lapisan warna semi-transparan -->
+    <item>
+        <shape>
+            <corners android:radius="16dp"/>
+            <solid android:color="#80838383" /> <!-- Warna hitam dengan transparansi -->
+        </shape>
+    </item>
+</selector>
