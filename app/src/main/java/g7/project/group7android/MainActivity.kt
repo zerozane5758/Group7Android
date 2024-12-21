@@ -4,6 +4,7 @@ package g7.project.group7android
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -25,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
 
-        findViewById<Button>(R.id.logout).setOnClickListener {
+        findViewById<ImageView>(R.id.ivLogout).setOnClickListener {
             firebaseAuth.signOut()
             val intent = Intent(this, SignInActivity::class.java)
 //            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
