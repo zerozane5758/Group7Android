@@ -43,43 +43,57 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/tvEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/alata"
+        android:text="Popular Event"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/ivMenu"
+        app:layout_constraintTop_toBottomOf="@id/ivMenu"/>
+
     <ImageView
         android:id="@+id/ivColdplay"
         android:layout_width="367dp"
         android:layout_height="182dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/rounded"
         android:clipToOutline="true"
         android:scaleType="centerCrop"
         android:src="@drawable/coldplay"
         app:layout_constraintEnd_toEndOf="@id/ivLogout"
-        app:layout_constraintStart_toStartOf="@id/ivMenu"
-        app:layout_constraintTop_toBottomOf="@+id/tvJudul" />
+        app:layout_constraintStart_toStartOf="@id/tvEvent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEvent" />
 
     <ImageView
         android:id="@+id/ivBlur"
         android:layout_width="335dp"
         android:layout_height="85dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="100dp"
         android:clipToOutline="true"
         android:scaleType="centerCrop"
         android:src="@drawable/rounded_blur"
         app:layout_constraintEnd_toEndOf="@id/ivColdplay"
         app:layout_constraintStart_toStartOf="@id/ivColdplay"
-        app:layout_constraintTop_toBottomOf="@id/tvJudul"/>
+        app:layout_constraintTop_toBottomOf="@id/tvEvent" />
 
     <TextView
         android:id="@+id/tvNama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="168dp"
         android:fontFamily="@font/alata"
         android:text="Coldplay : Music of the Spheres"
         android:textColor="@color/white"
         android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/ivColdplay"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.258"
         app:layout_constraintStart_toStartOf="@id/ivColdplay"
         app:layout_constraintTop_toBottomOf="@id/tvJudul" />
 
@@ -148,6 +162,20 @@
         android:textSize="17sp"
         app:layout_constraintStart_toEndOf="@id/tvLocation"
         app:layout_constraintTop_toBottomOf="@id/tvStart" />
+
+    <TextView
+        android:id="@+id/tvEvent2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/alata"
+        android:text="Events This Year"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/ivMenu"
+        app:layout_constraintTop_toBottomOf="@id/ivColdplay"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
