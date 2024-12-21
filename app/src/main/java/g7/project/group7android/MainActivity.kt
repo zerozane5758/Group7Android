@@ -2,6 +2,7 @@ package g7.project.group7android
 
 // melakukan percobaan commmit and push
 // melakukan percobaan pull request
+// jo coba commit
 
 import android.content.Intent
 import android.os.Bundle
