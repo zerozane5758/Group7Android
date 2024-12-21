@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1097285265934",
+    "project_id": "group7android",
+    "storage_bucket": "group7android.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097285265934:android:9844f46142329af5e9aa5f",
+        "android_client_info": {
+          "package_name": "g7.project.group7android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTkhBrkUhOQEVQRUZY06fwowJYIa9XNeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
