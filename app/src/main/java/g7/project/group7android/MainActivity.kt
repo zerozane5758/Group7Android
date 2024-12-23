@@ -6,12 +6,15 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.squareup.picasso.Picasso
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var firebaseAuth: FirebaseAuth
@@ -29,6 +32,8 @@ class MainActivity : AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
         firestore = FirebaseFirestore.getInstance()
+
+        fetchKonserData()
 
 
         findViewById<ImageView>(R.id.ivLogout).setOnClickListener {
@@ -50,8 +55,38 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SignInActivity::class.java)
             startActivity(intent)
         }
-
     }
+    fun updateUI(nama: String, gambar: String, lokasi: String, tanggal: String) {
+        findViewById<TextView>(R.id.tvNama).text = nama
+        findViewById<TextView>(R.id.tvLocation).text = lokasi
+        findViewById<TextView>(R.id.tvDate).text = tanggal
+    }
+
+    fun fetchKonserData() {
+        firestore.collection("konser")
+            .get()
+            .addOnSuccessListener { querySnapshot ->
+                for (document in querySnapshot.documents) {
+                    val nama = document.getString("namaKonser") ?: ""
+                    val gambar = document.getString("gambar") ?: ""
+                    val lokasi = document.getString("lokasi") ?: ""
+                    val tanggal = document.getString("tanggal") ?: ""
+                    val imageView = findViewById<ImageView>(R.id.ivColdplay)
+                    Picasso.get()
+                        .load(gambar)
+                        .into(imageView)
+
+
+                    // Update UI
+                    updateUI(nama, gambar, lokasi, tanggal)
+                    break // Jika hanya ingin menampilkan satu konser, hentikan setelah mengambil yang pertama
+                }
+            }
+            .addOnFailureListener { e ->
+                Toast.makeText(this, "Gagal mengambil data: ${e.message}", Toast.LENGTH_SHORT).show()
+            }
+    }
+
 
 
 }

@@ -25,6 +25,5 @@ class TicketActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
     }
 }
