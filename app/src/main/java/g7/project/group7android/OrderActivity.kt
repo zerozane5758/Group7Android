@@ -8,8 +8,24 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 class OrderActivity : AppCompatActivity() {
+    private lateinit var rvPrice: RecyclerView
+    private lateinit var priceAdapter: priceAdapter
+    private val priceList = listOf(
+        dcPrice("Ultimate Experience", "Rp. 15.000.000"),
+        dcPrice("My Universe", "Rp. 10.000.000"),
+        dcPrice("Festival", "Rp. 8.000.000"),
+        dcPrice("CAT 1", "Rp. 5.000.000"),
+        dcPrice("CAT 2", "Rp. 4.200.000"),
+        dcPrice("CAT 3", "Rp. 3.000.000"),
+        dcPrice("CAT 4", "Rp. 2.500.000"),
+        dcPrice("CAT 5", "Rp. 2.000.000"),
+        dcPrice("CAT 6", "Rp. 1.700.000")
+    )
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -26,16 +42,12 @@ class OrderActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val _price1 = findViewById<ConstraintLayout>(R.id.price1)
-        val _price2 = findViewById<ConstraintLayout>(R.id.price2)
-        val _price3 = findViewById<ConstraintLayout>(R.id.price3)
-        val _price4 = findViewById<ConstraintLayout>(R.id.price4)
-        val _price5 = findViewById<ConstraintLayout>(R.id.price5)
+        rvPrice = findViewById(R.id.rvPrice)
+        priceAdapter = priceAdapter(priceList)
 
-        _price1.setOnClickListener {
-            val intent = Intent(this, TicketActivity::class.java)
-            startActivity(intent)
+        rvPrice.layoutManager = LinearLayoutManager(this)
+        rvPrice.adapter = priceAdapter
 
-        }
+
     }
 }
