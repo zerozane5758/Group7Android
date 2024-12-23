@@ -43,7 +43,7 @@
 
                 <ImageView
                     android:id="@+id/ivShow"
-                    android:layout_width="359dp"
+                    android:layout_width="319dp"
                     android:layout_height="192dp"
                     android:layout_marginStart="4dp"
                     android:background="@drawable/rounded"
@@ -65,18 +65,18 @@
                     android:textStyle="bold"
                     android:textSize="16dp"/>
 
-                <TextView
-                    android:id="@+id/tvTitle2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@id/ivShow"
-                    app:layout_constraintStart_toEndOf="@id/tvTitle"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="20dp"
-                    android:text="Music of the spheres"
-                    android:textStyle="bold"
-                    android:textSize="16dp"
-                    android:textColor="#A020F0"/>
+<!--                <TextView-->
+<!--                    android:id="@+id/tvTitle2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/ivShow"-->
+<!--                    app:layout_constraintStart_toEndOf="@id/tvTitle"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:text="Music of the spheres"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textColor="#A020F0"/>-->
 
                 <ImageView
                     android:id="@+id/ivLocation"
@@ -431,6 +431,37 @@ Coldplay akan melakukan konser di Stadium Gelora Bung Karno, Jakarta, Indonesia.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="CAT 7"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp. 1.000.000"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/price11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/price10"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:paddingVertical="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blank"
                         android:textColor="@color/white"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
