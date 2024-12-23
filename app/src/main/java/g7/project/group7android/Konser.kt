@@ -1,5 +1,3 @@
-package g7.project.group7android
-
 data class Konser(
     val namaKonser: String,
     val deskripsi: String,
