@@ -3,29 +3,16 @@ package g7.project.group7android
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
+
 
 class OrderActivity : AppCompatActivity() {
-    private lateinit var rvPrice: RecyclerView
-    private lateinit var priceAdapter: priceAdapter
-    private val priceList = listOf(
-        dcPrice("Ultimate Experience", "Rp. 15.000.000"),
-        dcPrice("My Universe", "Rp. 10.000.000"),
-        dcPrice("Festival", "Rp. 8.000.000"),
-        dcPrice("CAT 1", "Rp. 5.000.000"),
-        dcPrice("CAT 2", "Rp. 4.200.000"),
-        dcPrice("CAT 3", "Rp. 3.000.000"),
-        dcPrice("CAT 4", "Rp. 2.500.000"),
-        dcPrice("CAT 5", "Rp. 2.000.000"),
-        dcPrice("CAT 6", "Rp. 1.700.000")
-    )
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -36,17 +23,36 @@ class OrderActivity : AppCompatActivity() {
             insets
         }
 
+        val namaKonser = intent.getStringExtra("namaKonser")
+        val deskripsi = intent.getStringExtra("deskripsi")
+        val lokasi = intent.getStringExtra("lokasi")
+        val tanggal = intent.getStringExtra("tanggal")
+        val jenisTiket = intent.getStringArrayListExtra("jenisTiket")
+        val gambar = intent.getStringExtra("gambar")
+
+        findViewById<TextView>(R.id.tvTitle).text = namaKonser
+        findViewById<TextView>(R.id.tvDescription2).text = deskripsi
+        findViewById<TextView>(R.id.tvLocation).text = lokasi
+        findViewById<TextView>(R.id.tvDate).text = tanggal
+        Picasso.get().load(gambar).into(findViewById<ImageView>(R.id.ivShow))
+
         val backButton = findViewById<ImageView>(R.id.back)
         backButton.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
-        rvPrice = findViewById(R.id.rvPrice)
-        priceAdapter = priceAdapter(priceList)
+        val _price1 = findViewById<ConstraintLayout>(R.id.price1)
+        val _price2 = findViewById<ConstraintLayout>(R.id.price2)
+        val _price3 = findViewById<ConstraintLayout>(R.id.price3)
+        val _price4 = findViewById<ConstraintLayout>(R.id.price4)
+        val _price5 = findViewById<ConstraintLayout>(R.id.price5)
 
-        rvPrice.layoutManager = LinearLayoutManager(this)
-        rvPrice.adapter = priceAdapter
+        _price1.setOnClickListener {
+            val intent = Intent(this, TicketActivity::class.java)
+            startActivity(intent)
+
+        }
 
 
     }
