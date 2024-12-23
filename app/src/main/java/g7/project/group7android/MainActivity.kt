@@ -9,11 +9,13 @@ import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     private lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var firestore: FirebaseFirestore
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +28,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         firebaseAuth = FirebaseAuth.getInstance()
+        firestore = FirebaseFirestore.getInstance()
+
 
         findViewById<ImageView>(R.id.ivLogout).setOnClickListener {
             firebaseAuth.signOut()
@@ -40,5 +44,14 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, OrderActivity::class.java)
             startActivity(intent)
         }
+
+        val _logout = findViewById<ImageView>(R.id.ivLogout)
+        _logout.setOnClickListener() {
+            val intent = Intent(this, SignInActivity::class.java)
+            startActivity(intent)
+        }
+
     }
+
+
 }

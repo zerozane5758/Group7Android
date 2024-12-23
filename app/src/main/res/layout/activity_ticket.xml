@@ -98,7 +98,7 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="2"
                     android:orientation="vertical">
 
                     <TextView
@@ -106,6 +106,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Date"
+
                         android:textColor="@android:color/darker_gray"
                         android:textSize="18sp" />
 
@@ -113,6 +114,7 @@
                         android:id="@+id/tvTanggal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+
                         android:text="Nov 15 2023"
                         android:textColor="@android:color/black"
                         android:textSize="20sp"
