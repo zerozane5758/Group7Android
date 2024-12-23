@@ -56,26 +56,12 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
 
-        val _tvNama = findViewById<TextView>(R.id.tvNama)
-        _tvNama.setOnClickListener() {
-            val intent = Intent(this, OrderActivity::class.java)
-            startActivity(intent)
-        }
-
-
         val _logout = findViewById<ImageView>(R.id.ivLogout)
         _logout.setOnClickListener() {
             val intent = Intent(this, SignInActivity::class.java)
             startActivity(intent)
         }
     }
-
-    fun updateUI(nama: String, gambar: String, lokasi: String, tanggal: String) {
-        findViewById<TextView>(R.id.tvNama).text = nama
-        findViewById<TextView>(R.id.tvLocation).text = lokasi
-        findViewById<TextView>(R.id.tvDate).text = tanggal
-    }
-
 
     private fun fetchKonserData() {
         firestore.collection("konser")
