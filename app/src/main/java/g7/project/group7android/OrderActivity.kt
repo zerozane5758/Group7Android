@@ -8,7 +8,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.firebase.auth.FirebaseAuth
@@ -59,29 +58,49 @@ class OrderActivity : AppCompatActivity() {
             findViewById(R.id.price6)
         )
 
+        val titleIds = listOf(
+            R.id.title1, R.id.title2, R.id.title3,
+            R.id.title4, R.id.title5, R.id.title6
+        )
+        val hargaIds = listOf(
+            R.id.harga1, R.id.harga2, R.id.harga3,
+            R.id.harga4, R.id.harga5, R.id.harga6
+        )
+
         // Get concert details from intent
         namaKonser = intent.getStringExtra("namaKonser") ?: ""
         deskripsi = intent.getStringExtra("deskripsi") ?: ""
         lokasi = intent.getStringExtra("lokasi") ?: ""
         tanggal = intent.getStringExtra("tanggal") ?: ""
+        val jenisTiket = intent.getStringArrayListExtra("jenisTiket") ?: arrayListOf()
+        val hargaTiket = intent.getStringArrayListExtra("hargaTiket") ?: arrayListOf()
         gambar = intent.getStringExtra("gambar") ?: ""
 
         // Load concert image
         Picasso.get().load(gambar).into(findViewById<ImageView>(R.id.ivShow))
 
-        // Set seat click listeners
-        val seatDetails = listOf(
-            "Ultimate Experience: Rp. 15.000.000",
-            "My Universe: Rp. 10.000.000",
-            "Festival: Rp. 8.000.000",
-            "CAT 1: Rp. 5.000.000",
-            "CAT 2: Rp. 4.200.000",
-            "CAT 3: Rp. 3.000.000"
-        )
+        // Populate seat details dynamically
+        val seatDetails = mutableListOf<String>()
+        for (i in 0 until titleIds.size) {
+            val titleView = findViewById<TextView>(titleIds[i])
+            val hargaView = findViewById<TextView>(hargaIds[i])
+
+            if (i < jenisTiket.size && i < hargaTiket.size) {
+                titleView.text = jenisTiket[i]
+                hargaView.text = hargaTiket[i]
+                seatDetails.add("${jenisTiket[i]}: ${hargaTiket[i]}")
+                seatLayouts[i].visibility = View.VISIBLE
+            } else {
+                titleView.text = ""
+                hargaView.text = ""
+                seatLayouts[i].visibility = View.GONE
+            }
+        }
 
         // Initially disable the buy ticket button
         buyTicketButton.isEnabled = false
 
+        // Set seat click listeners
         seatLayouts.forEachIndexed { index, layout ->
             layout.setOnClickListener {
                 selectedSeat = seatDetails[index]
@@ -129,20 +148,6 @@ class OrderActivity : AppCompatActivity() {
                         // Handle failure
                     }
             }
-
-//            if (userEmail != null) {
-//                firestore.collection("tickets")
-//                    .document(userEmail)
-//                    .set(ticketData)
-//                    .addOnSuccessListener {
-//                        val intent = Intent(this, ListTicket::class.java)
-//                        startActivity(intent)
-//                    }
-//                    .addOnFailureListener { e ->
-//                        // Handle failure
-//                    }
-//            }
-
         }
     }
 }

@@ -52,6 +52,7 @@ class SignInActivity : AppCompatActivity() {
                 "Wembley Stadium",
                 "2024-06-22",
                 listOf("Ultimate Experience", "My Universe", "Festival", "CAT 1", "CAT 2", "CAT 3"),
+                listOf("Rp. 15.000.000", "Rp. 10.000.000", "Rp. 8.000.000", "Rp. 5.000.000", "Rp. 4.200.000", "Rp. 3.000.000"),
                 "https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/01/2024/02/17/taylor-swift-eras-tour-081023-3-3411bb8115944906a22fa9d1b7239d13-103355577.jpg"
             ),
             Konser(
@@ -60,6 +61,7 @@ class SignInActivity : AppCompatActivity() {
                 "Allegiant Stadium",
                 "2022-04-10",
                 listOf("Ultimate Experience", "My Universe", "Festival", "CAT 1", "CAT 2", "CAT 3"),
+                listOf("Rp. 15.000.000", "Rp. 10.000.000", "Rp. 8.000.000", "Rp. 5.000.000", "Rp. 4.200.000", "Rp. 3.000.000"),
                 "https://asset.kompas.com/crops/cFUh0-M1yf8-pw2QpOgc01HawAM=/0x172:1080x892/750x500/data/photo/2022/02/23/6215bd8864f3f.jpg"
             ),
             Konser(
@@ -68,6 +70,7 @@ class SignInActivity : AppCompatActivity() {
                 "Gelora Bung Karno Stadium",
                 "2023-11-15",
                 listOf("Ultimate Experience", "My Universe", "Festival", "CAT 1", "CAT 2", "CAT 3"),
+                listOf("Rp. 15.000.000", "Rp. 10.000.000", "Rp. 8.000.000", "Rp. 5.000.000", "Rp. 4.200.000", "Rp. 3.000.000"),
                 "https://statik.tempo.co/data/2023/05/09/id_1202686/1202686_720.jpg"
             ),
             Konser(
@@ -76,6 +79,7 @@ class SignInActivity : AppCompatActivity() {
                 "ICE BSD City",
                 "2023-02-09 & 2023-02-10",
                 listOf("Ultimate Experience", "My Universe", "Festival", "CAT 1", "CAT 2", "CAT 3"),
+                listOf("Rp. 15.000.000", "Rp. 10.000.000", "Rp. 8.000.000", "Rp. 5.000.000", "Rp. 4.200.000", "Rp. 3.000.000"),
                 "https://cdn.antaranews.com/cache/1200x800/2022/07/03/ARTWORK-BANNER-1920x1280.jpg"
             ),
             Konser(
@@ -84,6 +88,7 @@ class SignInActivity : AppCompatActivity() {
                 "Stadion Madya, Gelora Bung Karno",
                 "2022-11-03",
                 listOf("Ultimate Experience", "My Universe", "Festival", "CAT 1", "CAT 2", "CAT 3"),
+                listOf("Rp. 15.000.000", "Rp. 10.000.000", "Rp. 8.000.000", "Rp. 5.000.000", "Rp. 4.200.000", "Rp. 3.000.000"),
                 "https://s.kaskus.id/img/hot_thread/hot_thread_fd1qp8ezrbif.jpg"
             ),
             Konser(
@@ -92,6 +97,7 @@ class SignInActivity : AppCompatActivity() {
                 "Stadion Utama Gelora Bung Karno",
                 "2023-03-11 & 2023-03-12"  ,
                 listOf("Ultimate Experience", "My Universe", "Festival", "CAT 1", "CAT 2", "CAT 3"),
+                listOf("Rp. 15.000.000", "Rp. 10.000.000", "Rp. 8.000.000", "Rp. 5.000.000", "Rp. 4.200.000", "Rp. 3.000.000"),
                 "https://consequence.net/wp-content/uploads/2022/10/blackpink-hero.jpg?quality=80"
             ),
             Konser(
@@ -100,6 +106,7 @@ class SignInActivity : AppCompatActivity() {
                 "Stadion Utama Gelora Bung Karno",
                 "2019-05-03",
                 listOf("Ultimate Experience", "My Universe", "Festival", "CAT 1", "CAT 2", "CAT 3"),
+                listOf("Rp. 15.000.000", "Rp. 10.000.000", "Rp. 8.000.000", "Rp. 5.000.000", "Rp. 4.200.000", "Rp. 3.000.000"),
                 "https://themusicalgypsy.com/wp-content/uploads/2020/11/ed-feature.jpg"
             )
         )

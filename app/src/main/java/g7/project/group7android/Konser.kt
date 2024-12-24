@@ -4,5 +4,6 @@ data class Konser(
     val lokasi: String,
     val tanggal: String,
     val jenisTiket: List<String>,
+    val hargaTiket: List<String>,
     val gambar: String
 )

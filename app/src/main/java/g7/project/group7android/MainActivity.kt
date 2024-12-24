@@ -103,6 +103,7 @@ class MainActivity : AppCompatActivity() {
                     putExtra("lokasi", konser.lokasi)
                     putExtra("tanggal", konser.tanggal)
                     putStringArrayListExtra("jenisTiket", ArrayList(konser.jenisTiket))
+                    putStringArrayListExtra("hargaTiket", ArrayList(konser.hargaTiket))
                     putExtra("gambar", konser.gambar)
                 }
                 startActivity(intent)
@@ -123,6 +124,7 @@ class MainActivity : AppCompatActivity() {
                         val lokasi = document.getString("lokasi") ?: ""
                         val tanggal = document.getString("tanggal") ?: ""
                         val jenisTiket = document.get("jenisTiket") as? List<String> ?: emptyList()
+                        val hargaTiket = document.get("hargaTiket") as? List<String> ?: emptyList()
                         val gambar = document.getString("gambar") ?: ""
 
                         val konser = Konser(
@@ -131,6 +133,7 @@ class MainActivity : AppCompatActivity() {
                             lokasi,
                             tanggal,
                             jenisTiket,
+                            hargaTiket,
                             gambar
                         )
                         konserList.add(konser)
@@ -155,6 +158,7 @@ class MainActivity : AppCompatActivity() {
                         firstDocument.getString("lokasi") ?: "",
                         firstDocument.getString("tanggal") ?: "",
                         firstDocument.get("jenisTiket") as? List<String> ?: emptyList(),
+                        firstDocument.get("hargaTiket") as? List<String> ?: emptyList(),
                         firstDocument.getString("gambar") ?: ""
                     )
 
@@ -172,6 +176,7 @@ class MainActivity : AppCompatActivity() {
                             putExtra("lokasi", konserPertama.lokasi)
                             putExtra("tanggal", konserPertama.tanggal)
                             putStringArrayListExtra("jenisTiket", ArrayList(konserPertama.jenisTiket))
+                            putStringArrayListExtra("hargaTiket", ArrayList(konserPertama.hargaTiket))
                             putExtra("gambar", konserPertama.gambar)
                         }
                         startActivity(intent)
