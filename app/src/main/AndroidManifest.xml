@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="g7.project.group7android">
+    <!-- Izin kamera untuk pemindaian QR Code -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -13,6 +19,7 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.Group7Android"
         tools:targetApi="31">
+        <!-- Aktivitas lainnya -->
         <activity
             android:name=".ListTicket"
             android:exported="false" />

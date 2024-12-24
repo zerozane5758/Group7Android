@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
+import com.journeyapps.barcodescanner.BarcodeEncoder
 
 class TicketAdapter(private val ticketList: List<Ticket>) : RecyclerView.Adapter<TicketAdapter.TicketViewHolder>() {
 
@@ -30,7 +31,28 @@ class TicketAdapter(private val ticketList: List<Ticket>) : RecyclerView.Adapter
             itemView.findViewById<TextView>(R.id.tvSeat).text = ticket.seat
             itemView.findViewById<TextView>(R.id.tvPrice).text = ticket.price
             itemView.findViewById<TextView>(R.id.userEmail).text = ticket.email
-//            Picasso.get().load(ticket.gambar).into(itemView.findViewById<ImageView>(R.id.ivShow))
+
+            // Buat data untuk QR Code dalam format JSON
+            val qrData = """
+            {
+                "Email": "${ticket.email}",
+                "Nama Konser": "${ticket.namaKonser}",
+                "Lokasi": "${ticket.lokasi}",
+                "Tanggal": "${ticket.tanggal}",
+                "Seat": "${ticket.seat}",
+                "Harga": "${ticket.price}"
+            }
+            """.trimIndent()
+
+            // Generate QR Code
+            val ivQr = itemView.findViewById<ImageView>(R.id.ivQr)
+            try {
+                val barcodeEncoder = BarcodeEncoder()
+                val bitmap = barcodeEncoder.encodeBitmap(qrData, com.google.zxing.BarcodeFormat.QR_CODE, 400, 400)
+                ivQr.setImageBitmap(bitmap)
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
         }
     }
 }

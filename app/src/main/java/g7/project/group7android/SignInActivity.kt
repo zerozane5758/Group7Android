@@ -51,8 +51,8 @@ class SignInActivity : AppCompatActivity() {
                 "Taylor Swift memulai tur globalnya dengan tema The Eras Tour. Pada tanggal 22 Juni 2024, Taylor Swift akan menggelar konser di Wembley Stadium, London, Inggris.",
                 "Wembley Stadium",
                 "2024-06-22",
-                listOf("Ultimate Experience", "My Universe", "Festival", "CAT 1", "CAT 2", "CAT 3"),
-                listOf("Rp. 15.000.000", "Rp. 10.000.000", "Rp. 8.000.000", "Rp. 5.000.000", "Rp. 4.200.000", "Rp. 3.000.000"),
+                listOf("It's been a long Time Coming", "Karma is My Boyfriend", "I Remember It All Too Well", "CAT 1", "CAT 2", "CAT 3"),
+                listOf("Rp. 13.600.000", "Rp. 8.000.000", "Rp. 6.900.000", "Rp. 3.800.000", "Rp. 3.600.000", "Rp. 3.100.000"),
                 "https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/01/2024/02/17/taylor-swift-eras-tour-081023-3-3411bb8115944906a22fa9d1b7239d13-103355577.jpg"
             ),
             Konser(
@@ -60,8 +60,8 @@ class SignInActivity : AppCompatActivity() {
                 "BTS melakukan tur dunia dengan tema Permission to Dance on Stage. Salah satu konsernya diadakan pada tanggal 10 April 2022 di Allegiant Stadium, Las Vegas, Amerika Serikat.",
                 "Allegiant Stadium",
                 "2022-04-10",
-                listOf("Ultimate Experience", "My Universe", "Festival", "CAT 1", "CAT 2", "CAT 3"),
-                listOf("Rp. 15.000.000", "Rp. 10.000.000", "Rp. 8.000.000", "Rp. 5.000.000", "Rp. 4.200.000", "Rp. 3.000.000"),
+                listOf("VIP", "CAT 1", "CAT 2", "CAT 3", "CAT 4", "CAT 5"),
+                listOf("Rp. 3.500.000", "Rp. 3.100.000", "Rp. 2.800.000", "Rp. 2.200.000", "Rp. 1.700.000", "Rp. 1.350.000"),
                 "https://asset.kompas.com/crops/cFUh0-M1yf8-pw2QpOgc01HawAM=/0x172:1080x892/750x500/data/photo/2022/02/23/6215bd8864f3f.jpg"
             ),
             Konser(
@@ -78,8 +78,8 @@ class SignInActivity : AppCompatActivity() {
                 "Westlife menggelar tur bertajuk The Wild Dreams Tour di Indonesia. Pada tanggal 9 dan 10 Februari 2023, Westlife tampil di ICE BSD City, Tangerang, Indonesia.",
                 "ICE BSD City",
                 "2023-02-09 & 2023-02-10",
-                listOf("Ultimate Experience", "My Universe", "Festival", "CAT 1", "CAT 2", "CAT 3"),
-                listOf("Rp. 15.000.000", "Rp. 10.000.000", "Rp. 8.000.000", "Rp. 5.000.000", "Rp. 4.200.000", "Rp. 3.000.000"),
+                listOf("VVIP", "Diamond", "Gold", "Silver", "Bronze", "Festival"),
+                listOf("Rp. 3.500.000", "Rp. 2.900.000", "Rp. 2.500.000", "Rp. 1.900.000", "Rp. 1.400.000", "Rp. 700.000"),
                 "https://cdn.antaranews.com/cache/1200x800/2022/07/03/ARTWORK-BANNER-1920x1280.jpg"
             ),
             Konser(
@@ -87,8 +87,8 @@ class SignInActivity : AppCompatActivity() {
                 "Justin Bieber mengadakan tur dunia bertajuk Justice World Tour. Pada tanggal 3 November 2022, Justin Bieber tampil di Stadion Madya, Gelora Bung Karno, Jakarta, Indonesia.",
                 "Stadion Madya, Gelora Bung Karno",
                 "2022-11-03",
-                listOf("Ultimate Experience", "My Universe", "Festival", "CAT 1", "CAT 2", "CAT 3"),
-                listOf("Rp. 15.000.000", "Rp. 10.000.000", "Rp. 8.000.000", "Rp. 5.000.000", "Rp. 4.200.000", "Rp. 3.000.000"),
+                listOf("Ghost VIP", "Peaches VIP", "Hold On VIP", "CAT 1", "CAT 2", "CAT 3"),
+                listOf("Rp. 8.500.000", "Rp. 6.250.000", "Rp. 5.200.000", "Rp. 4.700.000", "Rp. 4.200.000", "Rp. 3.500.000"),
                 "https://s.kaskus.id/img/hot_thread/hot_thread_fd1qp8ezrbif.jpg"
             ),
             Konser(
@@ -96,8 +96,8 @@ class SignInActivity : AppCompatActivity() {
                 "BLACKPINK menggelar konser sebagai bagian dari tur dunia BORN PINK. Pada tanggal 11 dan 12 Maret 2023, BLACKPINK tampil di Stadion Utama Gelora Bung Karno, Jakarta, Indonesia.",
                 "Stadion Utama Gelora Bung Karno",
                 "2023-03-11 & 2023-03-12"  ,
-                listOf("Ultimate Experience", "My Universe", "Festival", "CAT 1", "CAT 2", "CAT 3"),
-                listOf("Rp. 15.000.000", "Rp. 10.000.000", "Rp. 8.000.000", "Rp. 5.000.000", "Rp. 4.200.000", "Rp. 3.000.000"),
+                listOf("Gold", "Silver", "Jade", "Bronze", "CAT 1", "CAT 2"),
+                listOf("Rp. 4.000.000", "Rp. 3.250.000", "Rp. 2.800.000", "Rp. 2.000.000", "Rp. 1.500.000", "Rp. 1.000.000"),
                 "https://consequence.net/wp-content/uploads/2022/10/blackpink-hero.jpg?quality=80"
             ),
             Konser(
@@ -105,8 +105,8 @@ class SignInActivity : AppCompatActivity() {
                 "Ed Sheeran mengadakan konser Divide Tour di Indonesia. Pada tanggal 3 Mei 2019, Ed Sheeran tampil di Stadion Utama Gelora Bung Karno, Jakarta, Indonesia.",
                 "Stadion Utama Gelora Bung Karno",
                 "2019-05-03",
-                listOf("Ultimate Experience", "My Universe", "Festival", "CAT 1", "CAT 2", "CAT 3"),
-                listOf("Rp. 15.000.000", "Rp. 10.000.000", "Rp. 8.000.000", "Rp. 5.000.000", "Rp. 4.200.000", "Rp. 3.000.000"),
+                listOf("Pink", "Purple", "Blue", "Orange", "Yellow", "Green"),
+                listOf("Rp. 5.000.000", "Rp. 3.500.000", "Rp. 2.500.000", "Rp. 2.000.000", "Rp. 1.500.000", "Rp. 900.000"),
                 "https://themusicalgypsy.com/wp-content/uploads/2020/11/ed-feature.jpg"
             )
         )
@@ -125,20 +125,7 @@ class SignInActivity : AppCompatActivity() {
                 // Setelah data lama dihapus, tambahkan data baru
                 for (konser in konserList) {
                     firestore.collection("konser").document(konser.namaKonser).set(konser)
-                        .addOnSuccessListener {
-                            Toast.makeText(
-                                this,
-                                "Data konser berhasil ditambahkan.",
-                                Toast.LENGTH_SHORT
-                            ).show()
-                        }
-                        .addOnFailureListener { e ->
-                            Toast.makeText(
-                                this,
-                                "Gagal menambahkan data konser: ${e.message}",
-                                Toast.LENGTH_SHORT
-                            ).show()
-                        }
+
                 }
             }
             .addOnFailureListener { e ->
