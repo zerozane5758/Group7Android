@@ -21,8 +21,6 @@
             >
 
 
-
-
             <TextView
                 android:id="@+id/tvJudul"
                 android:layout_width="162dp"

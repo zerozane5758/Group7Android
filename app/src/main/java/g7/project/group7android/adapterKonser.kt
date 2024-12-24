@@ -42,6 +42,7 @@ class adapterKonser(
                 clickListener.onItemClick(konser)
             }
         }
+
     }
 }
 

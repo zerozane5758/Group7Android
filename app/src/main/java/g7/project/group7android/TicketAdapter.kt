@@ -1,5 +1,6 @@
 package g7.project.group7android
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -19,6 +20,20 @@ class TicketAdapter(private val ticketList: List<Ticket>) : RecyclerView.Adapter
     override fun onBindViewHolder(holder: TicketViewHolder, position: Int) {
         val ticket = ticketList[position]
         holder.bind(ticket)
+
+        holder.itemView.setOnClickListener {
+            val context = holder.itemView.context
+            val intent = Intent(context, TicketActivity::class.java).apply {
+                putExtra("namaKonser", ticket.namaKonser)
+                putExtra("deskripsi", ticket.deskripsi)
+                putExtra("lokasi", ticket.lokasi)
+                putExtra("tanggal", ticket.tanggal)
+                putExtra("seat", ticket.seat)
+                putExtra("harga", ticket.price)
+                putExtra("gambar", ticket.gambar)
+            }
+            context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int = ticketList.size
