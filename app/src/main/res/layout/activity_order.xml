@@ -23,7 +23,7 @@
         android:layout_height="match_parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="80dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="80dp"
         android:layout_marginHorizontal="20dp"
         android:background="@drawable/rounded"
         app:layout_constraintStart_toStartOf="parent">
@@ -324,135 +324,12 @@ Coldplay akan melakukan konser di Stadium Gelora Bung Karno, Jakarta, Indonesia.
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
+
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/price7"
+                    android:id="@+id/blank"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@+id/price6"
-                    app:layout_constraintStart_toStartOf="parent"
-                    android:paddingVertical="10dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/rounded2">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="CAT 4"
-                        android:textColor="@color/white"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:layout_marginLeft="10dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Rp. 2.500.000"
-                        android:textColor="@color/white"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginLeft="10dp"/>
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/price8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@+id/price7"
-                    app:layout_constraintStart_toStartOf="parent"
-                    android:paddingVertical="10dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/rounded2">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="CAT 5"
-                        android:textColor="@color/white"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:layout_marginLeft="10dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Rp. 2.000.000"
-                        android:textColor="@color/white"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginLeft="10dp"/>
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/price9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@+id/price8"
-                    app:layout_constraintStart_toStartOf="parent"
-                    android:paddingVertical="10dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/rounded2">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="CAT 6"
-                        android:textColor="@color/white"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:layout_marginLeft="10dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Rp. 1.700.000"
-                        android:textColor="@color/white"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginLeft="10dp"/>
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/price10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@+id/price9"
-                    app:layout_constraintStart_toStartOf="parent"
-                    android:paddingVertical="10dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/rounded2">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="CAT 7"
-                        android:textColor="@color/white"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:layout_marginLeft="10dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Rp. 1.000.000"
-                        android:textColor="@color/white"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginLeft="10dp"/>
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/price11"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@+id/price10"
                     app:layout_constraintStart_toStartOf="parent"
                     android:paddingVertical="10dp"
                     android:layout_marginTop="20dp"
@@ -485,4 +362,13 @@ Coldplay akan melakukan konser di Stadium Gelora Bung Karno, Jakarta, Indonesia.
 
     </ScrollView>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/buyTicket"
+        android:text="Buy Ticket"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

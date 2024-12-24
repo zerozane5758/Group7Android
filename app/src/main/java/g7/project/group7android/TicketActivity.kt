@@ -21,7 +21,7 @@ class TicketActivity : AppCompatActivity() {
 
         val backButton = findViewById<ImageView>(R.id.back)
         backButton.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, ListTicket::class.java)
             startActivity(intent)
         }
 
