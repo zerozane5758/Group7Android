@@ -76,6 +76,15 @@ class OrderActivity : AppCompatActivity() {
         val hargaTiket = intent.getStringArrayListExtra("hargaTiket") ?: arrayListOf()
         gambar = intent.getStringExtra("gambar") ?: ""
 
+        val _tvTitle = findViewById<TextView>(R.id.tvTitle)
+        val _tvDescription2 = findViewById<TextView>(R.id.tvDescription2)
+        val _tvLocation = findViewById<TextView>(R.id.tvLocation)
+        val _tvDate = findViewById<TextView>(R.id.tvDate)
+
+        _tvTitle.text = namaKonser
+        _tvDescription2.text = deskripsi
+        _tvLocation.text = lokasi
+        _tvDate.text = tanggal
         // Load concert image
         Picasso.get().load(gambar).into(findViewById<ImageView>(R.id.ivShow))
 
