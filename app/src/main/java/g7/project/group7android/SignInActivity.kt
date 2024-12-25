@@ -51,7 +51,7 @@ class SignInActivity : AppCompatActivity() {
                 "Taylor Swift memulai tur globalnya dengan tema The Eras Tour. Pada tanggal 22 Juni 2024, Taylor Swift akan menggelar konser di Wembley Stadium, London, Inggris.",
                 "Wembley Stadium",
                 "2024-06-22",
-                listOf("It's been a long Time Coming", "Karma is My Boyfriend", "I Remember It All Too Well", "CAT 1", "CAT 2", "CAT 3"),
+                listOf("Long Time Coming", "Karma is My Boyfriend", "Remember It All", "CAT 1", "CAT 2", "CAT 3"),
                 listOf("Rp. 13.600.000", "Rp. 8.000.000", "Rp. 6.900.000", "Rp. 3.800.000", "Rp. 3.600.000", "Rp. 3.100.000"),
                 "https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/01/2024/02/17/taylor-swift-eras-tour-081023-3-3411bb8115944906a22fa9d1b7239d13-103355577.jpg"
             ),
