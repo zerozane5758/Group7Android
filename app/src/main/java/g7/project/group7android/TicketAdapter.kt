@@ -48,16 +48,7 @@ class TicketAdapter(private val ticketList: List<Ticket>) : RecyclerView.Adapter
             itemView.findViewById<TextView>(R.id.userEmail).text = ticket.email
 
             // Buat data untuk QR Code dalam format JSON
-            val qrData = """
-            {
-                "Email": "${ticket.email}",
-                "Nama Konser": "${ticket.namaKonser}",
-                "Lokasi": "${ticket.lokasi}",
-                "Tanggal": "${ticket.tanggal}",
-                "Seat": "${ticket.seat}",
-                "Harga": "${ticket.price}"
-            }
-            """.trimIndent()
+            val qrData = ticket.namaKonser
 
             // Generate QR Code
             val ivQr = itemView.findViewById<ImageView>(R.id.ivQr)

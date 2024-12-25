@@ -73,7 +73,7 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
+                    android:layout_weight="1"
                     android:orientation="vertical">
 
                     <TextView
@@ -81,7 +81,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Date"
-
                         android:textColor="@android:color/darker_gray"
                         android:textSize="18sp" />
 
@@ -89,52 +88,56 @@
                         android:id="@+id/tvTanggal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-
                         android:text="Nov 15 2023"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <!-- Seat -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="end">
+
+                    <TextView
+                        android:id="@+id/seatLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Seat"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Festival"
                         android:textColor="@android:color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Seat -->
-            <TextView
-                android:id="@+id/seatLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_gravity="center"
-                android:text="Seat"
-                android:textColor="@android:color/darker_gray"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/tvType"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Festival"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <!-- Barcode -->
-            <ImageView
-                android:id="@+id/barcodeImage"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginTop="16dp"
-                android:src="@drawable/barcode" />
-
             <TextView
                 android:id="@+id/barcodeInstruction"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="20dp"
                 android:text="Scan your barcode at the entry gate."
                 android:textColor="@android:color/darker_gray"
                 android:textSize="14sp" />
+
+            <!-- Barcode -->
+            <ImageView
+                android:id="@+id/ivBarcode"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/barcode" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
