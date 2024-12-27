@@ -27,6 +27,10 @@ class SignInActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.textView2.setOnClickListener {
+            val intent = Intent(this, InputDataActivity::class.java)
+            startActivity(intent)
+        }
         binding.button.setOnClickListener {
             val email = binding.emailEt.text.toString()
             val pass = binding.passET.text.toString()
@@ -110,7 +114,7 @@ class SignInActivity : AppCompatActivity() {
                 "https://themusicalgypsy.com/wp-content/uploads/2020/11/ed-feature.jpg"
             )
         )
-        tambahKonser(konserList)
+        //tambahKonser(konserList)
     }
 
     fun tambahKonser(konserList: List<Konser>) {

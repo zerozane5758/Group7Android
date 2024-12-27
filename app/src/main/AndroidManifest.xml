@@ -19,6 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.Group7Android"
         tools:targetApi="31">
+        <activity
+            android:name=".InputDataActivity"
+            android:exported="false" />
         <!-- Aktivitas lainnya -->
         <activity
             android:name=".ListTicket"
